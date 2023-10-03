@@ -7,7 +7,7 @@ import main.java.lotr.Character;
 import java.util.Random;
 
 public class GameManager {
-    public static void main(String[] args) {
+    public static void fight() {
         // create 2 characters
         CharacterFactory fact = new CharacterFactory();
         Character ch1 = fact.createCharacter();
@@ -66,5 +66,9 @@ public class GameManager {
 
     public static void kick(KickStrategy kickMethod, Character whoKick, Character oponent) {
         kickMethod.kick(whoKick, oponent);
+    }
+
+    public static void main(String[] args) {
+        fight();
     }
 }
