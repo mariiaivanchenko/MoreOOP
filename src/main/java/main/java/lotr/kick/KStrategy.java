@@ -8,7 +8,7 @@ public class KStrategy implements KickStrategy { // king and knigth strategies
     public void kick(Character whoKick, Character oponent) {
         Random random = new Random();
         // oponent.setHp(oponent.getHp() - random.nextInt(1, whoKick.getHp()));
-        int rndVal = random.nextInt(1, whoKick.getHp());
+        int rndVal = random.nextInt(whoKick.getHp() - 1) + 1;
         oponent.setHp(oponent.getHp() - rndVal);
     }
 }
