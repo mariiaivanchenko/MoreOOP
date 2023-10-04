@@ -11,6 +11,6 @@ public class ElfKill implements KickStrategy{
         else {
             Random random = new Random();
             whoKick.setPower(whoKick.getPower() - 1);
-            oponent.setHp(oponent.getHp() - random.nextInt(whoKick.getHp() - 1) + 1;        }
+            oponent.setHp(oponent.getHp() - random.nextInt(whoKick.getHp() - 1) + 1);        }
     }
 }
