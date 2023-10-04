@@ -26,7 +26,7 @@ public class GameManager {
         while ((ch1.isAlive() == true) && (ch2.isAlive() == true)) {
             // who is gonna start a fight?
             Random rnd = new Random();
-            int flag = rnd.nextInt(0, 2);
+            int flag = rnd.nextInt(2);
             Character currentCh = (flag == 0) ? ch1 : ch2;
             Character oponent = (currentCh == ch1) ? ch2 : ch1;
             System.out.println(currentCh.toString() + " starts a fight." + "\n");
